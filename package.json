@@ -1,0 +1,22 @@
+{
+  "name": "log-digestion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.ts --bundle --minify --platform=node --target=node16 --outfile=dist/index.js",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.7",
+    "esbuild": "^0.18.17",
+    "typescript": "^5.1.6"
+  }
+}
